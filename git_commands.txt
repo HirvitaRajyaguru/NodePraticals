@@ -1,0 +1,33 @@
+git remote add origin https://github.com/HirvitaRajyaguru/NodePraticals.git
+
+-------------- git clone  for new creating repository ----------------
+
+git clone "https://github.com/HirvitaRajyaguru/NodePraticals.git"
+
+------------------------git push ---------------------
+1> git status
+
+2> git add "change file name"
+
+3>  git commit -m "changes message"
+
+4>  git push origin "branch name"
+
+
+
+-------------------- git pull -------------------
+
+
+git pull origin "branch name"
+
+------------- create new branch -------------------
+
+git branch <new branch name>
+
+--------------- change branch --------
+
+git chrckout <branch name>
+
+----------- merge branch --------------
+
+git merge <branch name>
