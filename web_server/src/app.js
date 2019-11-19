@@ -17,7 +17,11 @@ app.set("views", viewsPath);
 hbs.registerPartials(partialpath);
 
 // Setup static directory to serve
-// app.use(express.static(publicDirectory));
+ app.use(express.static(publicDirectory));
+
+
+
+
 
 // ----------------- express & html_json start -------------------
 // app.get("", (req, res) => {
@@ -90,6 +94,11 @@ hbs.registerPartials(partialpath);
 
 // ----------------- hbs starts ------------------
 app.get("", (req, res) => {
+  // res.send({
+  //         focast: 'It is winter here',
+  //         location: 'Mumbai',
+  //         address: req.query.address
+  //     })
   res.render("index", {
     title: "Weather App",
     name: "Hirvita Rajyaguru"
