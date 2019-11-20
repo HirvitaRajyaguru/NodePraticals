@@ -31,3 +31,11 @@ git chrckout <branch name>
 ----------- merge branch --------------
 
 git merge <branch name>
+
+
+------- mongo db  commands ----------
+path and run cmd
+
+create folder mongodb_data
+
+/NodeJS/mongodb/bin/mongod.exe --dbpath=/NodeJS/mongodb_data

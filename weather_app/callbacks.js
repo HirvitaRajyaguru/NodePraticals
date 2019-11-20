@@ -26,12 +26,27 @@
 
 
 
-const add = (x,y,outputvalue) => {
+// const add = (x,y,outputvalue) => {
+//   setTimeout(() => {
+//     outputvalue(x+y)
+//   },2000)
+// }
+
+// add(10,13,(output_sum) => {
+//     console.log(output_sum)
+// })
+
+
+const doworkcallback = (callback) => {
   setTimeout(() => {
-    outputvalue(x+y)
+    //callback('This is my error....',undefined)
+    callback(undefined, [1,2,3])
   },2000)
 }
 
-add(10,13,(output_sum) => {
-    console.log(output_sum)
+doworkcallback((error, result) => {
+   if(error){
+     return console.log(error)
+   }
+   console.log(result)
 })
