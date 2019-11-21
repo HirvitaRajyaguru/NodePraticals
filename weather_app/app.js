@@ -3,21 +3,21 @@ const request = require('request')
 //const forecast = require('./utils/forecast')
 
 //  ------------------------    Async basics start --------------------
-// console.log('Starting')
+console.log('Starting')
 
-// setTimeout(() => {
-//     console.log('2 Second Timer')
-//    }, 2000)
+setTimeout(() => {
+    console.log('2 Second Timer')
+   }, 2000)
 
-// setTimeout(() =>{
-//     console.log('0 second timer')
-// },0)
+setTimeout(() =>{
+    console.log('0 second timer')
+},0)
 
-// setTimeout(() =>{
-//     console.log('1 second timer')
-// },1000)
+setTimeout(() =>{
+    console.log('1 second timer')
+},1000)
 
-// console.log('Stopping')
+console.log('Stopping')
 //  ------------------------    Async basics ends --------------------
 
 // ------------------------- Making HTTP Request starts ---------------------------
