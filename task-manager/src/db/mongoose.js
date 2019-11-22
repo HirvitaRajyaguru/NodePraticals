@@ -3,7 +3,8 @@ const validator = require("validator")
 
 mongoose.connect("mongodb://127.0.0.1:27017/task-manager-api", {
   useNewUrlParser: true,
-  useCreateIndex: true
+  useCreateIndex: true,
+  useFindAndModify:false
 });
 
 // -------------- mongoose create operation started -----------------------------------------------------
@@ -64,29 +65,29 @@ mongoose.connect("mongodb://127.0.0.1:27017/task-manager-api", {
 
 // -------------------------------- Task of mongoose to create new task -------------------
 
-const Task = mongoose.model("Task", {
-  Description: {
-    type: String,
-    required:true,
-    trim: true
-  },
-  Completed: {
-    type: Boolean,
-    default: false
-  }
-});
+// const Task = mongoose.model("Task", {
+//   Description: {
+//     type: String,
+//     required:true,
+//     trim: true
+//   },
+//   Completed: {
+//     type: Boolean,
+//     default: false
+//   }
+// });
 
-const TaskAdd = new Task({
-  Description: '   Learn React JS'
+// const TaskAdd = new Task({
+//   Description: '   Learn React JS'
   
-});
+// });
 
-TaskAdd.save()
-  .then(() => {
-    console.log(TaskAdd);
-  })
-  .catch(error => {
-    console.log(error);
-  });
+// TaskAdd.save()
+//   .then(() => {
+//     console.log(TaskAdd);
+//   })
+//   .catch(error => {
+//     console.log(error);
+//   });
 
 // -------------------------------- Task of mongoose ends here ----------------------------------
